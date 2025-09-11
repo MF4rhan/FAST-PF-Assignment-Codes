@@ -1,7 +1,13 @@
-# C-Programming-Lab.
-## My Favorite Programming Languages
+# Task 6: Markdown Elements
+This is an example of **Bold**, *Italic*, and ~~Strikethrough~~ texts.
 
-- C
-- Python
-- Javascript
-- HTML
+## Code Example
+```bash
+Code Block
+git status
+```
+## Task List
+- [x] Create Github account.
+- [x] Do PF Lab Tasks
+- [ ] Submit Assignment. 
+
