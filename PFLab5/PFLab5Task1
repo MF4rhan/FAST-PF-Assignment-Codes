@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+	int a, b;
+	printf("Enter the first number.\n");
+	scanf("%d", &a);
+	printf("Enter the second number.\n");
+	scanf("%d", &b);
+	printf("The output is %d \n", a+b*(a-b)/2);
+	printf("Here the Parenthesis () have the highest precedence and will be the very first thing that happens, which has subtraction in it: %d \n ", (a-b));
+	printf("next, Multiply * has equal precedence as Divide /, but * is first in order from left to right, so it will happen first: %d \n ", b*(a-b));
+	printf("Next, Divide / has the highest precedence, so that will happen next: %d \n", b*(a-b)/2);
+	printf("And finally, Addition + will happen last: %d \n", a+b*(a-b)/2);
+	return 0;
+}
