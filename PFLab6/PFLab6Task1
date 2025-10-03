@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+	int ceven=0, codd=0, inp;
+	char z;
+	do
+	{
+		printf("Enter a Number:");
+		scanf("\n%d", &inp);
+		if (inp%2 == 0)
+		{
+			ceven++;
+			printf("\nThe input number is even.");
+		}
+		else
+		{
+			codd++;
+			printf("\nThe input number is odd.");
+		}
+		printf("\nDo you want to continue the program? (y/n)");
+		scanf(" %c",&z);
+	} while (z=='y');
+	printf("\nThe number of even input number is %d", ceven);
+	printf("\nThe number of odd input number is %d", codd);
+return 0;
+}
