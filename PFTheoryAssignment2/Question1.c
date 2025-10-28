@@ -84,7 +84,7 @@ void processsale(int isbns[], int quantities[], int currentbookcount)
             {
                 if (copiessold>quantities[i])
                 {
-                    printf("Insufficient Stock, please try again.\n\n");
+                    printf("Insufficient Stock, please try again.\n");
                     printf("The remaining stock of this book is %d.\n\n", quantities[i]);
                     invalid=1;
                     break;
