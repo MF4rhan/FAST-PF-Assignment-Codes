@@ -55,7 +55,7 @@ void update(int grid[5][5])
             case 1: //set
                 do
                 {
-                    printf("\n1.Power Status.\n2.OverLoad Warning.\n3. Maintainance Required.\nEnter your choice.\n");
+                    printf("\n1. Power Status.\n2. OverLoad Warning.\n3. Maintainance Required.\nEnter your choice.\n");
                     scanf("%d", &status);
                     grid[row][column] |= (1 << (status-1));
                     printf("\nThe selected status on sector (%d, %d) has been Set.\n", row, column);
@@ -108,4 +108,5 @@ void diagnostic(int grid[5][5])
     printf("\nTotal number of Overloaded Sectors: %d", overloaded);
     printf("\nTotal number of Sectors that require maintainance: %d", maintainance);
     printf("\n\n");
+
 }
