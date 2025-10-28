@@ -128,7 +128,7 @@ void billinvoice(float totalbill,int cart[], int quantity[], int prices[], int c
             scanf(" %s", inputpromo);
             if (strcmp(inputpromo, promo) == 0)
             {
-                printf("\nPromocode Accepted, 25% discount applied.\n");
+                printf("\nPromocode Accepted, 25 percent discount applied.\n");
                 discount=(totalbill*0.25);
                 totalbill-=(totalbill*0.25);
                 break;
@@ -155,4 +155,5 @@ void billinvoice(float totalbill,int cart[], int quantity[], int prices[], int c
         printf("\nDiscount after Promocode: %.2f", discount);
     }
     printf("\nTotal Bill:\t%.2f", totalbill);
+
 }
