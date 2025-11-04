@@ -16,11 +16,15 @@ int main()
     {
         for (int k = 0; k < 6; k++)
         {
+            if (k==0) printf("\n+---+---+---+---+---+---+\n");
+            
             for (int l = 0; l < 6; l++)
             {
-                printf("%d ", board[k][l]);
+                if (l==0)   printf("|");
+                
+                printf(" %d |", board[k][l]);
             }
-            printf("\n");
+            printf("\n+---+---+---+---+---+---+\n");
         }
         printf("Enter Direction W/A/S/D.\n");
         scanf(" %c", &input);
@@ -45,4 +49,5 @@ void move(int *i, int *j, char input, int board[6][6])
     else if (input == 'A' && (*j)>0 && board[(*i)][(*j)-1]!=1)  (*j)--;
     else if (input == 'D' && (*j)<5 && board[(*i)][(*j)+1]!=1)    (*j)++;
     else printf("\nInvalid move, try again.\n");
+
 }
