@@ -13,6 +13,16 @@ int main()
     int correct=0, length;
     do
     {
+        printf("\n\n");
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < 6; j++)
+            {
+                printf(" %c ", board[i][j]);
+            }
+            printf("\n");
+        }
+        
         printf("\n");
         printf("Enter your word.\n");
         scanf(" %s", guess);
@@ -55,4 +65,5 @@ int main()
         }
     } while (1);
 return 0;
+
 }
