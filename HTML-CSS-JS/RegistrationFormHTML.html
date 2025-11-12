@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentRegistrationForm</title>
+    <link rel="stylesheet" href="StudentRegistrationFormStyle.CSS">
+    <script src="StudentRegistrationFormFunction.JS"></script>
+
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="Fullname" placeholder="Enter your Full Name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" placeholder="e.g. name@example.com" required>
+        <br><br>
+
+        <label for="phone"> Phone Number:</label>
+        <input type="number" id="phone" name="Phone" placeholder="Enter your Phone Number"required>
+        <br><br>
+
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" name="Dateofbirth" required>
+        <br><br>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="Gender" value="Other">
+        <br><br>
+
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="nothing">Select Deparment</option>
+            <option value="CS">Computer Science</option>
+            <option value="AI">Artificial Intelligence</option>
+            <option value="CY">Cyber Security</option>
+            <option value="DS">Data Science</option>
+            <option value="CE">Computer Engineering</option>
+            <option value="IT">Information Technology</option>
+        </select>
+        <br><br>
+
+        <p> <h3>Skills:</h4></p>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="HTML">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="CSS">
+        <label for="c">C</label>
+        <input type="checkbox" id="c" name="C">
+        <label for="c++">C++</label>
+        <input type="checkbox" id="cpp" name="CPP">
+        <label for="c#">C#</label>
+        <input type="checkbox" id="csharp" name="CSharp">
+        <label for="python">Python</label>
+        <input type="checkbox" id="python" name="Python">
+        <label for="rust">Rust</label>
+        <input type="checkbox" id="rust" name="Rust">
+        <label for="linu">Linux</label>
+        <input type="checkbox" id="linu" name="Linux">
+        <br><br>
+
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="Address" rows="4" cols="50" placeholder="Address"></textarea>
+        <br><br>
+
+        <label for="profile">Upload Profile Picture:</label>
+        <input type="file" id="profile" name="Profile">
+        <br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="Password" required>
+        <br><br>
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="Confirm_Password" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
